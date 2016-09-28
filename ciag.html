@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CIAG</title>
+	<link rel="stylesheet" href="/egzamin1/style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>	
+	<div id="container">
+	
+		<div id="baner">
+			<center><a href="pesel.html"><img src="/egzamin1/baner.jpg" width= "1000px"; /></a></center>
+		</div>
+	
+		<div id="lewo">
+			<ul>
+					<li><a href="/egzamin1/pesel.html">PESEL</a></li>
+					<li><a href="/egzamin1/liczba.html">Podaj liczbę</a></li>
+					<li><a href="/egzamin1/ciag.html">Wypisz ciąg znaków</a></li>
+				<ul>
+		</div>
+		
+		<div id="srodek">
+			<h1>Wprowadź hasło</h1>
+				<input type="text" id="haslo">
+				<input type="submit" onClick="sprawdz()" value="Sprawdź to!">
+				<p id="rezultat"></p>
+		</div>
+		
+		<div id="stopka">
+		Praca wykonana przez &copy; Paweł Salamucha Klasa 402T nr15 
+		</div>
+		
+	
+	</div>
+	<script type="text/javascript">
+		function sprawdz(){
+			if(document.getElementById("haslo").value === "matematyka"){
+				var a = prompt("Wprowadź pierwszą liczbę:");
+				var b = prompt("Wprowadź drugą liczbę");
+					
+				if(a > b){
+					for (var i = b; i <= a; i++){
+						document.getElementById("rezultat").innerHTML += i+", "
+					}
+				}
+				else if(b > a){
+					for (var i = a; i <= b; i++){
+						document.getElementById("rezultat").innerHTML += i+", "
+					}
+				}
+				else {
+					document.getElementById("rezultat").innerHTML += a;
+				}
+			}
+			else {
+				document.getElementById("rezultat").innerHTML = "Dostęp do skryptu zabroniony";
+			}
+		}
+		</script>
+	
+</body>
+</html>

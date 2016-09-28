@@ -1,0 +1,56 @@
+body
+{
+	background-color: #66CCFF;
+	font-family: 'Lato', sans-serif;
+}
+
+#container{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#baner{
+	margin-top: 20px;
+	letter-spacing: 3px;
+	font-weight: 900;
+	border-bottom: 5px solid black;
+}
+
+#lewo{
+	float: left;
+	width: 248px;
+	min-height: 620px;
+	padding:20px;
+	background-color: #66FF33;
+	text-align: justify;
+	font-size: 18px;
+}
+
+#srodek{
+	float: left;
+	padding: 40px;
+	width: 630px;
+	background-color: #FFFF33;
+	min-height: 580px;
+	text-align: justify;
+}
+
+#stopka{
+	clear: both;
+	color: #66CCFF;
+	text-align: center;
+	padding: 20px;
+	font-size: 18px;
+}
+#h1pesel{
+	text-align: center;
+	text-decoration: underline;
+}
+#stopka1{
+	clear: both;
+	color: #FFFF33;
+	text-align: center;
+	padding: 20px;
+	font-size: 18px;
+}
